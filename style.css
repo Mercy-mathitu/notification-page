@@ -30,6 +30,8 @@ p {
 }
 .read {
     color: hsl(219, 14%, 63%);
+    cursor: pointer;
+    transition: 0.3s;
 }
 .name, .post, .chess {
     font-weight: bold;
