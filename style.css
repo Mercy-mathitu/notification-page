@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    background-color: hsl(210, 60%, 98%);
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 800px;
+    color: hsl(224, 21%, 14%);
+}
+
+p {
+    color: hsl(219, 14%, 63%);
+    font-size: 16px;
+}
+.read {
+    color: hsl(219, 14%, 63%);
+}
+.name, .post, .chess {
+    font-weight: bold;
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    
+}
+
+.post {
+    color: hsl(219, 12%, 42%);
+}
+
+.chess a {
+    color: hsl(219, 85%, 26%);
+}
+
+.btn {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 5px;
+}
+
+
+.activity {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+        padding: 10px;
+        margin: 10px;
+     
+}
+
+.unread {
+    border: solid 1px hsl(210, 60%, 98%);
+    background-color: hsl(210, 60%, 98%);
+}
+
+.unread p:first-of-type::after {
+    content: "";
+    background-color: hsl(1, 90%, 64%);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.message {
+    margin: 0px 30px 10px 120px;
+    border: solid 1px hsl(211, 68%, 94%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chess-img {
+    margin-left: auto;
+} 
+
+img {
+    margin: 20px;
+    max-width: 70px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 100px 100px 100px 100px hsl(210, 60%, 98%);
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.s3s;
+}
+
+a:hover, .read:hover, .post:hover, .name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        margin: 0;
+    }
+}
