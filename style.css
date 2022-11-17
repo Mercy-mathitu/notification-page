@@ -35,19 +35,23 @@ p {
 }
 .name, .post, .chess {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .name {
     color: hsl(224, 21%, 14%);
     
+    
 }
 
 .post {
     color: hsl(219, 12%, 42%);
+    
 }
 
-.chess a {
+.chess {
     color: hsl(219, 85%, 26%);
+    
 }
 
 .btn {
@@ -79,6 +83,8 @@ p {
 .unread {
     border: solid 1px hsl(210, 60%, 98%);
     background-color: hsl(210, 60%, 98%);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .unread p:first-of-type::after {
